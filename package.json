@@ -8,13 +8,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "node run-server.mjs",
-    "start-app": "node app.js"
+    "start": "rm -rf dist && astro build && node run-server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "@astrojs/node": "^9.4.1",
     "@astrojs/starlight": "^0.35.2",
